@@ -1,0 +1,24 @@
+{
+  "name": "your-vendor/sendgrid-laravel",
+  "description": "SendGrid wrapper for Laravel using sendgrid/sendgrid",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "YourVendor\\SendGridLaravel\\": "src/"
+    }
+  },
+  "require": {
+    "sendgrid/sendgrid": "^7.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "YourVendor\\SendGridLaravel\\SendGridServiceProvider"
+      ],
+      "aliases": {
+        "SendGrid": "YourVendor\\SendGridLaravel\\Facades\\SendGrid"
+      }
+    }
+  }
+}
