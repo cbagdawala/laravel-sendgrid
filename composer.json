@@ -1,11 +1,24 @@
 {
-  "name": "your-vendor/sendgrid-laravel",
+  "name": "cbagdawala/laravel-sendgrid",
+  "version": "dev-master",
   "description": "SendGrid wrapper for Laravel using sendgrid/sendgrid",
   "type": "library",
+  "keywords": [
+    "cbagdawala",
+    "sendgrid"
+  ],
+  "homepage": "https://github.com/cbagdawala/laravel-sendgrid",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Chintan Bagdawala",
+      "email": "chintan@bagdawala.com",
+      "role": "Developer"
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "YourVendor\\SendGridLaravel\\": "src/"
+      "LaravelSendGrid\\": "src/"
     }
   },
   "require": {
@@ -14,10 +27,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "YourVendor\\SendGridLaravel\\SendGridServiceProvider"
+        "LaravelSendGrid\\SendGridServiceProvider"
       ],
       "aliases": {
-        "SendGrid": "YourVendor\\SendGridLaravel\\Facades\\SendGrid"
+        "SendGrid": "LaravelSendGrid\\Facades\\SendGrid"
       }
     }
   }
